@@ -25,6 +25,21 @@ The official Pangeabuy logo is copied unchanged from `../logo/logo.png`. The log
 
 Live search, location, onboarding, checkout and merchant data are intentionally not simulated. The access dialogs explicitly describe this site's limits. No forms or data collection endpoints are present.
 
-Replace the launch/access and merchant dialog content with verified destinations when available. Publish approved privacy/terms/contact destinations before offering the live platform. Configure canonical URL, absolute social image URL and structured-data URL when the production domain is confirmed. The current Open Graph image uses a relative path for portability.
+Replace the launch/access and merchant dialog content with verified destinations when available. Publish approved privacy/terms/contact destinations before offering the live platform.
 
-The Stromule link points to the sibling `../stromule_website/index.html`; replace it with the verified deployed URL when hosting this directory independently. Manrope loads from Google Fonts, with local system font fallbacks. Everything else runs from local assets without dependencies.
+## GitHub Pages at pangeabuy.com
+
+Repository: https://github.com/kumsumit/pangite
+
+The repository root is the publishable website. The included GitHub Actions workflow deploys pushes to `main`. In repository Settings → Pages, choose **GitHub Actions** as the build source, then set the custom domain to `pangeabuy.com`.
+
+At your DNS provider, add these A records for the apex (`@`):
+
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
+
+Optionally add `www` as a CNAME to `kumsumit.github.io` (not the repository URL). Preserve unrelated email and verification records. Remove only conflicting website records. After DNS validation and certificate provisioning, enable **Enforce HTTPS** in Pages settings.
+
+`CNAME`, canonical metadata, social metadata, robots.txt and sitemap.xml are configured for https://pangeabuy.com/. The Stromule link points to https://stromule.com/. Manrope loads from Google Fonts with system fallbacks; all other assets are local.
