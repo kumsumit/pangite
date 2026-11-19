@@ -352,19 +352,30 @@ contactForm.addEventListener('submit', async e => {
 });
 
 
-/* ---------- Launch countdown ---------- */
+/* ---------- Launch countdown: calendar days to launch; bar and hero flip on the day ---------- */
 (() => {
   const box = document.getElementById('launch-count');
-  if (!box) return;
-  const target = new Date(2026, 11, 14).getTime();
-  const set = (u, v) => { const el = box.querySelector(`[data-u="${u}"]`); if (el) el.textContent = String(v).padStart(2, '0'); };
-  const tick = () => {
-    const diff = target - Date.now();
-    if (diff <= 0) { box.textContent = 'Live now'; return; }
-    set('d', Math.floor(diff / 864e5));
-    set('h', Math.floor(diff % 864e5 / 36e5));
-    set('m', Math.floor(diff % 36e5 / 6e4));
+  const msg = document.getElementById('announce-msg');
+  const link = document.getElementById('announce-link');
+  const launch = new Date(2026, 11, 14);
+  const update = () => {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const days = Math.round((launch - today) / 864e5);
+    if (box) {
+      const num = box.querySelector('[data-u="d"]');
+      const label = box.querySelector('[data-l="d"]');
+      box.classList.toggle('is-today', days === 0);
+      box.classList.toggle('is-live', days < 0);
+      if (days > 0) { num.textContent = days; label.textContent = days === 1 ? 'day to go' : 'days to go'; }
+      else if (days === 0) { num.textContent = 'Today'; label.textContent = 'launch day'; }
+      else { num.textContent = 'Live'; label.textContent = 'now available'; }
+    }
+    if (msg && days <= 0) {
+      msg.innerHTML = days === 0 ? 'Pangeabuy launches <strong>today</strong>' : 'Pangeabuy is <strong>live</strong>';
+      if (link) link.firstChild.textContent = 'Download now ';
+    }
   };
-  tick();
-  setInterval(tick, 30000);
+  update();
+  setInterval(update, 60000);
 })();

@@ -25,6 +25,7 @@
 <body>
 
 <svg width="0" height="0" class="sprite" aria-hidden="true">
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 11v6M12 7.5v.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-dl" viewBox="0 0 16 16"><path d="M8 2v8M4.5 7L8 10.5 11.5 7M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 3v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -38,6 +39,13 @@
 </svg>
 
 <a class="skip" href="#main">Skip to content</a>
+
+<div class="announce" id="announce">
+  <div class="wrap announce-inner">
+    <p class="announce-text"><span class="announce-tag">Launch</span><span id="announce-msg">Pangeabuy launches on <strong>Monday, 14 December 2026</strong></span></p>
+    <a class="announce-link" id="announce-link" href="#download">Get the app <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</div>
 
 <header class="site-header">
   <div class="wrap nav">
@@ -67,18 +75,28 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-head">
-        <p class="kicker"><span class="pulse" aria-hidden="true"></span>A new way to explore your local market</p>
+        <p class="kicker kicker-line">A new way to explore your local market</p>
         <h1>What you're looking for might be <em>closer than you think.</em></h1>
+        <div class="launch-card">
+          <div class="launch-leaf" aria-hidden="true">
+            <span class="launch-leaf-rings"><i></i><i></i></span>
+            <span class="launch-leaf-month">Dec</span>
+            <span class="launch-leaf-day">14</span>
+            <span class="launch-leaf-year">2026</span>
+          </div>
+          <div class="launch-text">
+            <span class="launch-label">Going live</span>
+            <strong class="launch-when"><time datetime="2026-12-14">Monday, 14 December 2026</time></strong>
+          </div>
+          <div class="launch-days" id="launch-count" aria-live="off">
+            <b data-u="d">--</b>
+            <span data-l="d">days to go</span>
+          </div>
+        </div>
       </div>
       <div class="hero-aside">
         <p class="hero-lede">Discover products and participating merchants in your local market with Pangeabuy—a hyper-commerce platform designed to make local options easier to find.</p>
         <p class="hero-secondary">From everyday essentials to specialised products, explore the possibilities around you and discover a more connected way to shop locally.</p>
-        <div class="launch-card" aria-label="Launch date: 14 December 2026">
-          <div class="launch-date"><span class="launch-label">Going live</span><strong><time datetime="2026-12-14">14 · 12 · 2026</time></strong></div>
-          <div class="launch-count" id="launch-count" aria-live="off">
-            <span><b data-u="d">--</b>days</span><span><b data-u="h">--</b>hrs</span><span><b data-u="m">--</b>min</span>
-          </div>
-        </div>
         <div class="actions">
           <a class="button" href="#explore">Explore Local <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <a class="button button-ghost" href="#download">Download <svg class="i" aria-hidden="true"><use href="#i-dl"/></svg></a>
@@ -197,7 +215,7 @@
           <div><strong>A fresh page.</strong><small>A new local possibility.</small></div>
         </div>
 
-        <div class="scene-label"><span class="dot" aria-hidden="true"></span>A connected local market</div>
+        <div class="scene-label">A connected local market</div>
       </div>
     </div>
 
@@ -288,7 +306,7 @@
       </div>
 
       <div class="availability" data-reveal>
-        <span class="pulse" aria-hidden="true"></span>
+        <svg class="availability-icon" aria-hidden="true"><use href="#i-info"/></svg>
         <div>
           <strong>A look at the idea. A clear view of the status.</strong>
           <p>This is the official introduction to Pangeabuy. This website is an introduction only. Product search, shopping and merchant onboarding will take place in the Pangeabuy desktop and mobile apps. Examples are illustrative, and Pangeabuy is scheduled to launch on 14 December 2026.</p>
@@ -723,7 +741,7 @@
     <div class="wrap">
       <div class="download-card" data-reveal>
         <div>
-          <p class="kicker"><span class="pulse" aria-hidden="true"></span>Download</p>
+          <p class="kicker kicker-line">Download</p>
           <h2>Get the Pangeabuy app <em>on 14 December 2026.</em></h2>
           <p>Downloads open on launch day. Pangeabuy will be available as a desktop app and a mobile app, where all searching, shopping and merchant activity takes place.</p>
         </div>
@@ -740,7 +758,7 @@
     <div class="wrap">
       <div class="closing-card" data-reveal>
         <div class="closing-copy">
-          <p class="kicker"><span class="pulse" aria-hidden="true"></span>Make room for a new local possibility</p>
+          <p class="kicker kicker-line">Make room for a new local possibility</p>
           <h2>Your next great local find could be <em>closer than you think.</em></h2>
           <p>Discover participating local merchants, explore relevant products and a more connected way to navigate your local market.</p>
           <div class="actions">
