@@ -1309,3 +1309,22 @@ dialog .button { margin-top: 30px; }
 .launch-count { display: flex; gap: 14px; position: relative; z-index: 1; }
 .launch-count span { display: grid; text-align: center; font: 500 .62rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: rgba(245, 241, 232, .7); gap: 4px; }
 .launch-count b { font: 500 1.4rem/1 var(--font-display); color: #fff; font-variant-numeric: tabular-nums; }
+
+/* ---------- Download ---------- */
+.download { padding-block: clamp(40px, 6vw, 80px); }
+.download-card {
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: center;
+  padding: clamp(24px, 4vw, 48px); background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+}
+.download-card h2 { margin: 10px 0 12px; }
+.download-card h2 em { color: var(--clay); }
+.download-card p { color: var(--ink-2); }
+.download-buttons { display: grid; gap: 12px; }
+.dl-btn {
+  display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px 20px; text-align: left;
+  font: 500 1rem/1.2 var(--font-text); color: var(--ink); background: var(--paper-2);
+  border: 1px dashed var(--ink-3); border-radius: 14px; cursor: not-allowed;
+}
+.dl-btn .i { width: 22px; height: 22px; color: var(--teal-deep); flex: none; }
+.dl-btn small { display: block; font: 500 .68rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px; }
+@media (max-width: 760px) { .download-card { grid-template-columns: 1fr; } }
