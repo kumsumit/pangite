@@ -124,8 +124,8 @@ window.matchMedia('(min-width: 901px)').addEventListener('change', e => { if (e.
 const info = {
   access: ['Your local market. A new possibility.', 'Pangeabuy is being introduced as a local product and merchant discovery platform, scheduled to launch on 14 December 2026. This website is an introduction only; searching, shopping and registration will take place in the Pangeabuy desktop and mobile apps.\n\nLocal coverage at launch will be confirmed closer to the date. The product and merchant illustrations explain the concept; they are not live listings. No personal information or early-access sign-ups are collected here.'],
   merchant: ['A new way to be discovered.', 'Pangeabuy aims to create an additional discovery opportunity for participating local merchants. This website is an introduction only; merchant onboarding will take place in the Pangeabuy desktop and mobile apps.\n\nPangeabuy launches on 14 December 2026. Participation requirements and launch coverage will be published when confirmed. Where an authorised Stromule integration is implemented, eligible product information may support discovery. No customer growth or sales are guaranteed.'],
-  contact: ['Contact & support information', 'An official Pangeabuy contact or support destination has not been supplied for publication. This website does not submit enquiries or collect contact details.\n\nFor now, explore the FAQ for product information. An official support channel will need to be added before a live customer or merchant service is offered.'],
-  privacy: ['Privacy on this introductory website', 'This website has no sign-up form, account system, analytics script or connected merchant database. Category selections only change the page displayed in your browser and are not saved.\n\nThe page requests the Fraunces, Geist and Geist Mono fonts from Google Fonts; your browser may share standard connection information with that provider. Hosting providers may also process standard request logs.\n\nA platform-specific privacy policy has not been supplied. This information is a description of this website, not a substitute for that policy.'],
+  contact: ['Contact & support information', 'Send us a message using the form below. Your name, email, optional phone number and message are sent to our form provider, Forminit, so we can reply.'],
+  privacy: ['Privacy on this introductory website', 'This website has no sign-up form or account system. The only form is the contact form, whose details are sent to Forminit when you submit it. There is no analytics script or connected merchant database. Category selections only change the page displayed in your browser and are not saved.\n\nThe page requests the Fraunces, Geist and Geist Mono fonts from Google Fonts; your browser may share standard connection information with that provider. Hosting providers may also process standard request logs.\n\nA platform-specific privacy policy has not been supplied. This information is a description of this website, not a substitute for that policy.'],
   terms: ['An introduction, with clear limits.', 'This website explains the Pangeabuy concept. Products, merchant names and artwork are illustrative. No transactions, reservations, product availability checks or account registrations take place here.\n\nLive coverage, onboarding requirements, ordering, payments and fulfilment depend on confirmed platform capabilities. Formal platform terms have not been supplied for publication.']
 };
 const categoryInfo = {
@@ -138,14 +138,19 @@ const categoryInfo = {
 
 const dialog = document.querySelector('#info-dialog');
 let previousFocus;
-function showInfo(title, copy) {
+const contactForm = document.querySelector('#contact-form');
+const contactStatus = document.querySelector('#contact-status');
+function showInfo(title, copy, withForm = false) {
   previousFocus = document.activeElement;
   document.querySelector('#dialog-title').textContent = title;
   document.querySelector('#dialog-copy').textContent = copy;
+  contactForm.hidden = !withForm;
+  document.querySelector('.dialog-done').hidden = withForm;
+  contactStatus.textContent = '';
   dialog.showModal();
 }
 document.querySelectorAll('[data-info]').forEach(button =>
-  button.addEventListener('click', () => showInfo(...info[button.dataset.info])));
+  button.addEventListener('click', () => showInfo(...info[button.dataset.info], button.dataset.info === 'contact')));
 document.querySelectorAll('[data-category]').forEach(button => button.addEventListener('click', () => {
   const [title, copy] = categoryInfo[button.dataset.category];
   showInfo(title, copy + '\n\nThis is an illustrative category, not a live product result. Listings, coverage and category availability depend on participating merchants and the eventual platform experience.');
@@ -267,3 +272,34 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   revealables.forEach(el => el.classList.add('reveal'));
 }
+
+/* ---------- Contact form (Forminit) ---------- */
+const FORMINIT_ID = 'xxa4jb3cw44';
+let sending = false;
+contactForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (sending) return;
+  sending = true;
+  const fd = new FormData(contactForm);
+  if (!fd.get('fi-sender-phone')) fd.delete('fi-sender-phone');
+  const button = contactForm.querySelector('[type=submit]');
+  button.disabled = true;
+  contactStatus.textContent = 'Sending…';
+  try {
+    if (typeof Forminit === 'undefined') throw new Error('Forminit SDK not loaded');
+    const { data, error } = await new Forminit().submit(FORMINIT_ID, fd);
+    if (error || typeof data?.hashId !== 'string') {
+      console.error(error);
+      contactStatus.textContent = error?.message || 'Sorry, that did not send. Please check your details and try again.';
+    } else {
+      contactForm.reset();
+      contactStatus.textContent = 'Thank you. Your message has been sent.';
+    }
+  } catch (err) {
+    console.error(err);
+    contactStatus.textContent = 'Sorry, that did not send. Please try again.';
+  } finally {
+    sending = false;
+    button.disabled = false;
+  }
+});
