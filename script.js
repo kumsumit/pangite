@@ -303,3 +303,21 @@ contactForm.addEventListener('submit', async e => {
     button.disabled = false;
   }
 });
+
+
+/* ---------- Launch countdown ---------- */
+(() => {
+  const box = document.getElementById('launch-count');
+  if (!box) return;
+  const target = new Date(2026, 11, 14).getTime();
+  const set = (u, v) => { const el = box.querySelector(`[data-u="${u}"]`); if (el) el.textContent = String(v).padStart(2, '0'); };
+  const tick = () => {
+    const diff = target - Date.now();
+    if (diff <= 0) { box.textContent = 'Live now'; return; }
+    set('d', Math.floor(diff / 864e5));
+    set('h', Math.floor(diff % 864e5 / 36e5));
+    set('m', Math.floor(diff % 36e5 / 6e4));
+  };
+  tick();
+  setInterval(tick, 30000);
+})();

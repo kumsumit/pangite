@@ -1290,3 +1290,22 @@ dialog .button { margin-top: 30px; }
   .footer-main { grid-template-columns: 1fr; gap: 36px; }
   dialog { padding: 30px 24px; }
 }
+
+/* ---------- Launch card (hero) ---------- */
+.launch-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  margin: 22px 0 6px; padding: 16px 20px;
+  background: var(--teal-night); color: var(--paper);
+  border-radius: 16px; position: relative; overflow: hidden;
+  box-shadow: 0 14px 34px -18px rgba(10, 53, 54, .6);
+  animation: rise .9s 1s var(--ease) both;
+}
+.launch-card::after {
+  content: ""; position: absolute; right: -40px; top: -60px; width: 160px; height: 160px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 105, 62, .45), transparent 70%); pointer-events: none;
+}
+.launch-label { display: block; font: 500 .68rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--clay-soft); margin-bottom: 8px; }
+.launch-date strong { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: .01em; }
+.launch-count { display: flex; gap: 14px; position: relative; z-index: 1; }
+.launch-count span { display: grid; text-align: center; font: 500 .62rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: rgba(245, 241, 232, .7); gap: 4px; }
+.launch-count b { font: 500 1.4rem/1 var(--font-display); color: #fff; font-variant-numeric: tabular-nums; }
