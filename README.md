@@ -15,8 +15,8 @@ Open http://localhost:8080. No install or build is required. Deploy this directo
 ## Contents
 
 - `index.html`: complete homepage and SEO metadata.
-- `styles.css`: logo-derived teal design tokens, responsive layouts and reduced-motion support.
-- `script.js`: FAQs, accessible mobile navigation, illustrative category filters and information dialogs.
+- `styles.css`: editorial design system — warm paper palette with the logo teal (#008888), Fraunces / Geist / Geist Mono type, responsive layouts and reduced-motion support.
+- `script.js`: sticky header state, accessible mobile navigation, illustrative category filters, information dialogs and scroll reveals.
 - `assets/`: original supplied logo, Stromule logo and local SVG illustrations.
 
 The official Pangeabuy logo is copied unchanged from `../logo/logo.png`. The logo's sampled teal family ranges from approximately #006868 to #008888; the primary colour is #008888. Product and storefront illustrations are conceptual artwork, not real inventory or merchant photography.
@@ -42,4 +42,4 @@ At your DNS provider, add these A records for the apex (`@`):
 
 Optionally add `www` as a CNAME to `kumsumit.github.io` (not the repository URL). Preserve unrelated email and verification records. Remove only conflicting website records. After DNS validation and certificate provisioning, enable **Enforce HTTPS** in Pages settings.
 
-`CNAME`, canonical metadata, social metadata, robots.txt and sitemap.xml are configured for https://pangeabuy.com/. The Stromule link points to https://stromule.com/. Manrope loads from Google Fonts with system fallbacks; all other assets are local.
+`CNAME`, canonical metadata, social metadata, robots.txt and sitemap.xml are configured for https://pangeabuy.com/. The Stromule link points to https://stromule.com/. Fraunces, Geist and Geist Mono load from Google Fonts with system fallbacks; all other assets (including the inline SVG map, street illustration and icons) are local.

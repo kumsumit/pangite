@@ -1,26 +1,728 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pangeabuy — Discover Your Local Market</title><meta name="description" content="Discover products and participating local merchants with Pangeabuy, a hyper-commerce platform designed to make local shopping options easier to find."><meta name="theme-color" content="#008888"><meta property="og:title" content="Pangeabuy — Your local market, within reach."><meta property="og:description" content="Discover local. Shop with confidence. Explore the idea behind a more connected local market."><meta property="og:type" content="website"><meta property="og:image" content="https://pangeabuy.com/assets/logo.png"><meta property="og:url" content="https://pangeabuy.com/"><link rel="canonical" href="https://pangeabuy.com/"><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Pangeabuy","url":"https://pangeabuy.com/","description":"A hyper-commerce platform designed for local product and merchant discovery.","publisher":{"@type":"Organization","name":"Kumpali Private Limited"}}</script></head><body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pangeabuy — Discover Your Local Market</title>
+  <meta name="description" content="Discover products and participating local merchants with Pangeabuy, a hyper-commerce platform designed to make local shopping options easier to find.">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta property="og:title" content="Pangeabuy — Your local market, within reach.">
+  <meta property="og:description" content="Discover local. Shop with confidence. Explore the idea behind a more connected local market.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pangeabuy.com/assets/logo.png">
+  <meta property="og:url" content="https://pangeabuy.com/">
+  <link rel="canonical" href="https://pangeabuy.com/">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Geist:wght@400..600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Pangeabuy","url":"https://pangeabuy.com/","description":"A hyper-commerce platform designed for local product and merchant discovery.","publisher":{"@type":"Organization","name":"Kumpali Private Limited"}}</script>
+</head>
+<body>
+
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 3v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 16 16"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 16 16"><path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5V20h16V9.5M3 9l2-5h14l2 5c0 1.4-1.1 2.5-2.5 2.5S16 10.4 16 9c0 1.4-1.8 2.5-4 2.5S8 10.4 8 9c0 1.4-1.1 2.5-2.5 2.5S3 10.4 3 9ZM10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.6-3 8.3-7 10-4-1.7-7-5.4-7-10V6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap nav"><a class="brand" href="#main" aria-label="Pangeabuy home"><img src="assets/logo.png" width="43" height="43" alt="">pangeabuy<span class="brand-dot">®</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Main navigation"><a href="#explore">Explore</a><a href="#categories">Categories</a><a href="#how">How it works</a><a href="#merchants">For merchants</a><a href="#about">About</a></nav><a class="button nav-cta" href="#explore">Explore Local <span aria-hidden="true">↗</span></a></div></header>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#main" aria-label="Pangeabuy home">
+      <img src="assets/logo.png" width="36" height="36" alt="">
+      <span>pangeabuy</span><sup class="brand-reg">®</sup>
+    </a>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#categories">Categories</a>
+      <a href="#how">How it works</a>
+      <a href="#merchants">For merchants</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="button button-sm nav-cta" href="#explore">Explore Local <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+      <span class="menu-label">Menu</span>
+      <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
 <main id="main">
-<section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><i></i>A NEW WAY TO EXPLORE YOUR LOCAL MARKET</div><h1>What you're<br>looking for might<br>be <span>closer than<br>you think.</span></h1><p>Discover products and participating merchants in your local market with Pangeabuy—a hyper-commerce platform designed to make local options easier to find.</p><p class="hero-secondary">From everyday essentials to specialised products, explore the possibilities around you and discover a more connected way to shop locally.</p><div class="actions"><a class="button" href="#explore">Explore Local <span aria-hidden="true">↗</span></a><a class="text-link" href="#how">Discover how it works <span aria-hidden="true">↓</span></a></div><div class="hero-note"><span class="tiny-mark">✳</span> Local businesses. Relevant products. More ways to discover.</div></div>
-<div class="discovery-scene" aria-label="An illustrative connected neighbourhood, with electronics, home, clothing and stationery merchants"><div class="scene-caption"><span>YOUR NEIGHBOURHOOD, REIMAGINED</span><span class="scene-cross">＋</span></div><svg class="map-lines" viewBox="0 0 600 600" aria-hidden="true"><path class="road" d="M0 220L600 400M180 0L410 600M0 480L600 120M450 0L100 600"/><circle cx="300" cy="300" r="185"/><circle cx="300" cy="300" r="103"/><path class="connection" d="M300 300L130 145M300 300L455 180M300 300L160 450M300 300L455 440"/></svg>
-<div class="merchant-mini electronics"><div class="mini-image"><img src="assets/electronics.svg" alt="Illustration of a phone and earphones" width="360" height="280"></div><span class="mini-type">A LITTLE EVERYDAY TECH</span><strong>Neighbourhood Electronics</strong><span>Accessories &amp; more <b>↗</b></span></div>
-<div class="merchant-mini home"><div class="mini-image"><img src="assets/home.svg" alt="Illustration of a ceramic cup and plant" width="360" height="280"></div><span class="mini-type">FOR THE PLACE YOU CALL HOME</span><strong>Everyday Home Store</strong><span>Thoughtful essentials <b>↗</b></span></div>
-<div class="you"><span class="you-icon" aria-hidden="true">⌖</span><strong>You &amp; your next find</strong><small>A world of local possibilities</small></div>
-<div class="merchant-mini fashion"><div class="mini-image"><img src="assets/fashion.svg" alt="Illustration of a terracotta cotton shirt" width="360" height="280"></div><span class="mini-type">SOMETHING THAT FEELS LIKE YOU</span><strong>The Local Wardrobe</strong><span>Style around the corner <b>↗</b></span></div>
-<div class="stationery"><img src="assets/books.svg" alt="Illustration of a notebook and pencil" width="85" height="70"><div><strong>A fresh page.</strong><small>A new local possibility.</small></div></div><div class="scene-label"><span class="dot"></span> A connected local market <span>ILLUSTRATIVE CONCEPT</span></div></div>
-<div class="hero-bottom"><span>Your local market, within reach.</span><span>DISCOVER LOCAL. SHOP WITH CONFIDENCE. <span aria-hidden="true">↘</span></span></div></section>
-<section class="section problem" id="why"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">THE POSSIBILITY AROUND THE CORNER</span><h2>Finding the right product<br>shouldn't always mean<br><span>looking far away.</span></h2></div><div class="section-copy"><p>Local markets are full of useful products, specialist knowledge and businesses that serve their communities every day.</p><p>But a product can be on a neighbourhood shelf without being easy to find online. Pangeabuy is built around the opportunity to bring those local possibilities into view.</p></div></div><div class="problem-grid"><article><span class="index">01 / DISCOVERY</span><h3>The right product.<br>Still hard to find.</h3><p>A nearby merchant may offer what you need, but you may not know the business or what it sells.</p><div>Make local options more discoverable. ↗</div></article><article><span class="index">02 / CONNECTION</span><h3>Local options.<br>Scattered everywhere.</h3><p>Business pages, websites and messages can make exploring your local choices feel fragmented.</p><div>A more connected starting point. ↗</div></article><article><span class="index">03 / VISIBILITY</span><h3>Good businesses.<br>Limited digital reach.</h3><p>Many merchants rely on foot traffic and referrals. Their products could be useful to someone who has never walked in.</p><div>Another opportunity to be seen. ↗</div></article><article><span class="index">04 / KNOWLEDGE</span><h3>Local expertise.<br>Often still offline.</h3><p>A specialist shop may have exactly the right variation or product knowledge, hidden behind its storefront.</p><div>Bring useful details into view. ↗</div></article></div><p class="section-foot">A stronger local shopping experience begins with making local options easier to find.</p></div></section>
-<section class="section wrap" id="explore"><div class="section-heading"><div><span class="eyebrow">MEET PANGEABUY</span><h2>Discover more<br>of <span>what's local.</span></h2></div><div class="section-copy"><p>Hyper-commerce, in everyday language: a more connected way to discover relevant products and participating merchants in your local market.</p><p>For customers, a clearer starting point. For merchants, another opportunity to be discovered.</p></div></div><div class="intro-panel"><div class="intro-art"><img src="assets/home.svg" alt="Illustrative household products" width="360" height="280"><div class="example-tag">A LOCAL POSSIBILITY / ILLUSTRATION</div><div class="example-listing"><span>Everyday Home Store</span><strong>Little things.<br>A more thoughtful home.</strong><span>Home &amp; everyday essentials</span></div></div><div class="intro-values"><article><span>01</span><div><h3>Discover</h3><p>Explore relevant products and participating businesses in a more organised discovery experience.</p></div></article><article><span>02</span><div><h3>Compare your options</h3><p>Review the available listing information and decide which option best suits your needs.</p></div></article><article><span>03</span><div><h3>Connect with local commerce</h3><p>Find participating merchants and follow the purchase journey actually supported for each listing.</p></div></article></div></div><div class="availability"><span class="status-dot"></span><div><strong>A look at the idea. A clear view of the status.</strong><p>This is the official introduction to Pangeabuy. Live product search, local coverage and merchant onboarding are not connected on this website. Examples are illustrative, and launch availability has not been announced.</p></div><button class="text-link" data-info="access">About access ↗</button></div></section>
-<section class="section how-section" id="how"><div class="wrap"><span class="eyebrow">A SIMPLE JOURNEY</span><h2>From a need to<br><span>a local possibility.</span></h2><p class="lead">Start with what you need. Get to know the local options.<br>Take the next step with the information in front of you.</p><ol class="steps"><li><span class="step-number">01 <i>↗</i></span><h3>Start with<br>what you need.</h3><p>Explore a product or category you are interested in, using the features available in the platform.</p></li><li><span class="step-number">02 <i>↗</i></span><h3>Discover relevant<br>local options.</h3><p>Find participating merchants and relevant listings, depending on coverage and merchant-provided information.</p></li><li><span class="step-number">03 <i>↗</i></span><h3>Take a closer<br>look at the details.</h3><p>Review the product and merchant information available to understand whether an option meets your needs.</p></li><li><span class="step-number">04 <i>↗</i></span><h3>Follow the<br>available journey.</h3><p>Use the contact, order, payment, pickup or delivery options only where supported for that listing.</p></li></ol></div></section>
-<section class="section wrap categories" id="categories"><div class="section-heading"><div><span class="eyebrow">EVERYDAY NEEDS. UNEXPECTED FINDS.</span><h2>Your local market is<br><span>more diverse than you think.</span></h2></div><p>From a new charging cable to a fresh notebook.<br>There's a whole world behind the shopfronts.</p></div><div class="category-filters" role="group" aria-label="Explore illustrative category groups"><button data-filter="all" aria-pressed="true">All possibilities</button><button data-filter="everyday" aria-pressed="false">Everyday living</button><button data-filter="personal" aria-pressed="false">Personal &amp; creative</button><button data-filter="specialist" aria-pressed="false">Specialist finds</button></div><div class="category-grid"><button class="category-card" data-group="specialist" data-category="electronics"><img src="assets/electronics.svg" width="360" height="280" loading="lazy" alt="Phone and wireless earphones"><span class="category-title">Electronics &amp; accessories <i>↗</i></span><span>Little connections. Everyday technology.</span></button><button class="category-card" data-group="everyday" data-category="home"><img src="assets/home.svg" width="360" height="280" loading="lazy" alt="Ceramic cup and a leafy plant"><span class="category-title">Home &amp; everyday essentials <i>↗</i></span><span>Useful things for the life you live.</span></button><button class="category-card" data-group="personal" data-category="fashion"><img src="assets/fashion.svg" width="360" height="280" loading="lazy" alt="Cotton shirt in warm terracotta"><span class="category-title">Fashion &amp; lifestyle <i>↗</i></span><span>Your style. Your local possibilities.</span></button><button class="category-card" data-group="personal" data-category="books"><img src="assets/books.svg" width="360" height="280" loading="lazy" alt="Notebook and pencil"><span class="category-title">Books &amp; stationery <i>↗</i></span><span>For big ideas and everyday notes.</span></button><button class="category-card" data-group="specialist" data-category="tools"><img src="assets/tools.svg" width="360" height="280" loading="lazy" alt="Spanner and screwdriver"><span class="category-title">Tools &amp; specialist products <i>↗</i></span><span>The right thing for the job at hand.</span></button><div class="more-card"><span aria-hidden="true">✳</span><h3>And so much<br>more to explore.</h3><p>A local market is never just one thing.</p><a class="text-link" href="#local">Meet the bigger idea ↗</a></div></div><p class="caption" id="category-status" aria-live="polite">Illustrative categories and products. These are examples of possibilities, not live inventory or confirmed launch categories.</p></section>
-<section class="local-section" id="local"><div class="wrap local-layout"><div class="market-art" role="img" aria-label="An illustrated neighbourhood of independent local shops"><span class="market-sun"></span><div class="shop shop-one"><div class="shop-roof"></div><span>THE CORNER STORE</span><div class="shop-window"><i></i><i></i><i></i></div></div><div class="shop shop-two"><div class="shop-roof"></div><span>BOOKS &amp; LITTLE IDEAS</span><div class="shop-window"><i></i><i></i><i></i></div></div><div class="market-ground"></div><span class="market-caption">Different shops. Shared neighbourhood.</span></div><div><span class="eyebrow">MORE THAN A PLACE TO SHOP</span><h2>Local businesses<br>are part of what<br><span>makes a place work.</span></h2><p>There's knowledge behind the counter. A familiar face at the door. People building livelihoods, one useful product and one conversation at a time.</p><p>Pangeabuy aims to give participating merchants another way to bring their products into view—and customers another way to find them.</p><ul class="principles"><li>Keep local options visible.</li><li>Make discovery more convenient.</li><li>Support the people behind commerce.</li></ul></div></div></section>
-<section class="section wrap merchant-section" id="merchants"><div class="merchant-copy"><span class="eyebrow">FOR THE PEOPLE BEHIND THE COUNTER</span><h2>You already serve<br>your neighbourhood.<br><span>Help more people<br>discover what you offer.</span></h2><p>You manage the products, suppliers and everyday work. Potential customers may still not know what you sell.</p><p>Pangeabuy is designed to create an additional discovery opportunity for participating merchants, using relevant business and product information.</p><div class="actions"><button class="button" data-info="merchant">I'm a Merchant <span aria-hidden="true">↗</span></button><a class="text-link" href="#ecosystem">Learn how it works ↓</a></div><p class="caption">An opportunity for discovery. No promise of customer growth or sales.</p></div><div class="merchant-benefits"><article><span>01</span><h3>Let your products tell their story.</h3><p>Present useful product information that helps people understand what your business offers.</p></article><article><span>02</span><h3>Be discovered beyond your doorstep.</h3><p>Create another potential route to people beyond your existing walk-in customer base.</p></article><article><span>03</span><h3>Build on information you maintain.</h3><p>Where implemented and authorised, relevant Stromule information may support customer-facing discovery.</p></article></div></section>
-<section class="section ecosystem-section" id="ecosystem"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">TWO PRODUCTS. ONE CONNECTED VISION.</span><h2>Better-organised businesses.<br><span>More useful local discovery.</span></h2></div><p>Pangeabuy and Stromule are products of Kumpali Private Limited. Complementary by design, with different jobs to do.</p></div><div class="ecosystem"><article><div class="product-brand"><img src="assets/stromule.png" width="48" height="48" alt="Stromule logo"><div><h3>Stromule</h3><span>OUR BUSINESS OS</span></div></div><h4>The business side.</h4><p>Organise relevant business information, product records, orders and everyday operations.</p><a class="text-link" href="https://stromule.com/">Explore Stromule ↗</a></article><div class="integration"><span aria-hidden="true">⇄</span><strong>Authorised<br>integration</strong><small>Where implemented</small></div><article><div class="product-brand"><img src="assets/logo.png" width="48" height="48" alt="Pangeabuy logo"><div><h3>Pangeabuy</h3><span>YOUR LOCAL MARKET, WITHIN REACH.</span></div></div><h4>The customer side.</h4><p>Discover relevant products and participating merchants through a local hyper-commerce experience.</p><a class="text-link" href="#explore">Explore Pangeabuy ↗</a></article></div><div class="flow"><span>Merchant</span><i>→</i><span>Stromule records</span><i>→</i><span>Authorised information</span><i>→</i><span>Pangeabuy discovery</span><i>→</i><span>Customer</span></div><p class="permission"><strong>Business records do not automatically become public.</strong> Only eligible information supported by an implemented integration and authorised by the merchant may support discovery. Stromule is not presented here as a universal requirement for joining Pangeabuy.</p></div></section>
-<section class="section wrap trust"><div class="section-heading"><div><span class="eyebrow">CONFIDENCE STARTS WITH CLARITY</span><h2>Better discovery begins<br>with <span>information you can rely on.</span></h2></div><p>Clear information. Recognisable merchants. Honest expectations about what happens next.</p></div><div class="trust-grid"><article><span>↳</span><h3>Clear product information</h3><p>Details should reflect the information actually supplied and supported by the merchant and platform.</p></article><article><span>⌂</span><h3>Merchant clarity</h3><p>Understand who is offering a product, using the business details available on the listing.</p></article><article><span>→</span><h3>Honest purchase journeys</h3><p>Contact, ordering, pickup and delivery depend on the options supported for each listing.</p></article><article><span>⊞</span><h3>Respect for permissions</h3><p>Information sharing depends on the implemented integration, authorisation and applicable policies.</p></article></div></section>
-<section class="section faq-section" id="faq"><div class="wrap faq-layout"><div><span class="eyebrow">A LITTLE MORE CLARITY</span><h2>Good questions.<br><span>Straightforward answers.</span></h2><p>Get to know the idea, the possibilities<br>and the details that matter.</p></div><div id="faq-list"><details open><summary>What is Pangeabuy?</summary><p>Pangeabuy is a hyper-commerce platform developed by Kumpali Private Limited, designed to help people discover relevant products and participating merchants in their local market.</p></details><details><summary>What does hyper-commerce mean?</summary><p>Here, it means a shopping and discovery experience focused on relevant products and participating merchants in a local market. The purchase options depend on the capabilities actually supported.</p></details><details><summary>Can I find products from nearby shops?</summary><p>That is the intended experience. Actual options will depend on participating merchants, available listings and local coverage. This introductory website does not provide live product search or location-based results.</p></details><details><summary>Can I buy products through Pangeabuy?</summary><p>This website does not provide checkout or take payments. In a connected shopping experience, the purchase journey will depend on the options supported for the relevant listing and merchant.</p></details><details><summary>Does Pangeabuy offer home delivery?</summary><p>No delivery service is offered through this website. Delivery, pickup and other fulfilment options depend on the merchant and the capabilities actually implemented for a listing.</p></details><details><summary>How can a merchant join Pangeabuy?</summary><p>Merchant onboarding is not connected on this website, and registration is not open here. No launch date or official enquiry channel has been supplied for publication. Updated joining information will need to be added when available.</p></details><details><summary>How are Pangeabuy and Stromule connected?</summary><p>Pangeabuy focuses on customer-facing discovery and commerce. Stromule focuses on business organisation. Where an integration is implemented and authorised, eligible merchant-maintained information can support Pangeabuy discovery. Private business records do not automatically become public.</p></details><details><summary>Are all products and merchants available everywhere?</summary><p>No. Availability depends on actual merchant participation, location coverage and the information on the platform. Illustrative examples on this website do not represent live inventory or confirmed launch categories.</p></details><details><summary>How does Pangeabuy use product information?</summary><p>Relevant merchant-maintained information is intended to support customer-facing discovery where the implementation, permissions and product rules allow it. This site has no connected merchant data or product feed. Platform-specific policies must be published before a live service is introduced.</p></details></div></div></section>
-<section class="closing" id="about"><div class="wrap"><span class="eyebrow">MAKE ROOM FOR A NEW LOCAL POSSIBILITY</span><h2>Your next great local find<br>could be <span>closer than you think.</span></h2><p>Discover participating local merchants, explore relevant products<br>and a more connected way to navigate your local market.</p><div class="actions"><button class="button light" data-info="access">About launch &amp; access ↗</button><a class="text-link" href="#merchants">For merchants ↗</a></div><div class="closing-signature"><img src="assets/logo.png" width="32" height="32" alt="">Your local market, within reach.</div></div></section>
-</main><footer class="wrap"><div class="footer-main"><div><a class="brand" href="#main"><img src="assets/logo.png" width="43" height="43" alt="">pangeabuy</a><p>Your local market, within reach.</p><p class="footer-description">A hyper-commerce platform designed to help people discover relevant products and participating merchants in their local market.</p></div><div class="footer-links"><span>DISCOVER</span><a href="#explore">Explore Pangeabuy</a><a href="#categories">Local possibilities</a><a href="#how">How it works</a><a href="#merchants">For merchants</a></div><div class="footer-links"><span>GET TO KNOW US</span><a href="#about">About Pangeabuy</a><a href="#ecosystem">Pangeabuy &amp; Stromule</a><a href="#faq">Questions &amp; answers</a><button data-info="contact">Contact &amp; support</button></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Pangeabuy. A product of Kumpali Private Limited.</span><div><button data-info="privacy">Privacy information</button><button data-info="terms">Terms &amp; availability</button><a href="#main">Back to top ↑</a></div></div></footer>
-<dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close dialog">×</button><img src="assets/logo.png" width="46" height="46" alt=""><span class="eyebrow">PANGEABUY / A CLEARER PICTURE</span><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="button dialog-done">Got it <span aria-hidden="true">↗</span></button></dialog>
-</body></html>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-head">
+        <p class="kicker"><span class="pulse" aria-hidden="true"></span>A new way to explore your local market</p>
+        <h1>What you're looking for might be <em>closer than you think.</em></h1>
+      </div>
+      <div class="hero-aside">
+        <p class="hero-lede">Discover products and participating merchants in your local market with Pangeabuy—a hyper-commerce platform designed to make local options easier to find.</p>
+        <p class="hero-secondary">From everyday essentials to specialised products, explore the possibilities around you and discover a more connected way to shop locally.</p>
+        <div class="actions">
+          <a class="button" href="#explore">Explore Local <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="text-link" href="#how">Discover how it works <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="discovery-scene" role="group" aria-label="An illustrative connected neighbourhood, with electronics, home, clothing and stationery merchants">
+        <svg class="scene-map" viewBox="0 -30 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#008888" stop-opacity=".16"/>
+              <stop offset="1" stop-color="#008888" stop-opacity="0"/>
+            </radialGradient>
+            <pattern id="blocks" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+              <path d="M0 0H44V44" fill="none" stroke="#f2efe6" stroke-width="5"/>
+            </pattern>
+          </defs>
+          <rect y="-40" width="1200" height="640" fill="#e3e9e1"/>
+          <rect y="-40" width="1200" height="640" fill="url(#blocks)"/>
+          <path d="M-40 470C140 420 300 560 470 620" stroke="#c7dcd8" stroke-width="70" fill="none"/>
+          <path d="M1240 40C1080 70 1020 -20 900 -40" stroke="#c7dcd8" stroke-width="56" fill="none"/>
+          <rect x="700" y="330" width="190" height="120" rx="14" fill="#cfdfcb" transform="rotate(-8 795 390)"/>
+          <g fill="#b7cfb2"><circle cx="735" cy="375" r="11"/><circle cx="762" cy="398" r="8"/><circle cx="800" cy="368" r="10"/><circle cx="842" cy="392" r="12"/><circle cx="820" cy="420" r="7"/></g>
+          <g stroke="#f7f4ec" stroke-linecap="round" fill="none">
+            <path d="M-20 215L1220 160" stroke-width="22"/>
+            <path d="M-20 415L1220 445" stroke-width="18"/>
+            <path d="M418 -40L484 620" stroke-width="20"/>
+            <path d="M766 -40L888 620" stroke-width="16"/>
+            <path d="M118 -40L194 620" stroke-width="9"/>
+            <path d="M1038 -40L1104 620" stroke-width="9"/>
+            <path d="M-20 85L1220 40" stroke-width="7"/>
+          </g>
+          <circle cx="600" cy="280" r="250" fill="url(#glow)"/>
+          <g fill="none" stroke="#008888" stroke-opacity=".35">
+            <circle cx="600" cy="280" r="110" stroke-dasharray="2 6" stroke-linecap="round" stroke-width="2"/>
+            <circle cx="600" cy="280" r="210" stroke-dasharray="2 8" stroke-linecap="round" stroke-width="2"/>
+            <circle cx="600" cy="280" r="320" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2" stroke-opacity=".22"/>
+          </g>
+          <g class="scene-links" stroke="#006b6b" stroke-width="1.5" stroke-dasharray="5 6" fill="none" stroke-opacity=".6">
+            <path id="route-electronics" d="M600 280Q380 170 200 165"/>
+            <path id="route-home" d="M600 280Q820 150 1010 160"/>
+            <path id="route-fashion" d="M600 280Q470 410 300 420"/>
+            <path id="route-note" d="M600 280Q770 420 930 455"/>
+          </g>
+          <g class="scene-travellers" fill="#008888">
+            <circle r="4.5" opacity="0"><animateMotion dur="3.4s" begin="2.8s" repeatCount="indefinite"><mpath href="#route-electronics"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.4s" begin="2.8s" repeatCount="indefinite"/></circle>
+            <circle r="4.5" opacity="0"><animateMotion dur="3.8s" begin="3.6s" repeatCount="indefinite"><mpath href="#route-home"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.8s" begin="3.6s" repeatCount="indefinite"/></circle>
+            <circle r="4.5" opacity="0" fill="#c8693e"><animateMotion dur="3.2s" begin="4.3s" repeatCount="indefinite"><mpath href="#route-fashion"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.2s" begin="4.3s" repeatCount="indefinite"/></circle>
+            <circle r="4.5" opacity="0"><animateMotion dur="3.6s" begin="5s" repeatCount="indefinite"><mpath href="#route-note"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="3.6s" begin="5s" repeatCount="indefinite"/></circle>
+          </g>
+          <g class="scene-pins" stroke="#f7f4ec" stroke-width="3">
+            <circle cx="320" cy="80" r="6" fill="#008888"/><circle cx="690" cy="110" r="6" fill="#c8693e"/>
+            <circle cx="1130" cy="330" r="6" fill="#008888"/><circle cx="560" cy="500" r="6" fill="#008888"/>
+            <circle cx="90" cy="300" r="6" fill="#c8693e"/><circle cx="960" cy="290" r="5" fill="#008888"/>
+          </g>
+        </svg>
+
+        <div class="scene-caption"><span>Your neighbourhood, reimagined</span></div>
+
+        <article class="pin-card pin-electronics">
+          <div class="pin-img"><img src="assets/electronics.svg" alt="Illustration of a phone and earphones" width="360" height="280"></div>
+          <div class="pin-body">
+            <span class="pin-type">A little everyday tech</span>
+            <strong>Neighbourhood Electronics</strong>
+            <span class="pin-meta">Accessories &amp; more <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </article>
+
+        <article class="pin-card pin-home">
+          <div class="pin-img"><img src="assets/home.svg" alt="Illustration of a ceramic cup and plant" width="360" height="280"></div>
+          <div class="pin-body">
+            <span class="pin-type">For the place you call home</span>
+            <strong>Everyday Home Store</strong>
+            <span class="pin-meta">Thoughtful essentials <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </article>
+
+        <div class="you">
+          <span class="you-dot" aria-hidden="true"></span>
+          <div><strong>You &amp; your next find</strong><small>A world of local possibilities</small></div>
+        </div>
+
+        <article class="pin-card pin-fashion">
+          <div class="pin-img"><img src="assets/fashion.svg" alt="Illustration of a terracotta cotton shirt" width="360" height="280"></div>
+          <div class="pin-body">
+            <span class="pin-type">Something that feels like you</span>
+            <strong>The Local Wardrobe</strong>
+            <span class="pin-meta">Style around the corner <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </article>
+
+        <div class="pin-note">
+          <img src="assets/books.svg" alt="Illustration of a notebook and pencil" width="85" height="70">
+          <div><strong>A fresh page.</strong><small>A new local possibility.</small></div>
+        </div>
+
+        <div class="scene-label"><span class="dot" aria-hidden="true"></span>A connected local market <span class="scene-tag">Illustrative concept</span></div>
+      </div>
+    </div>
+
+    <div class="wrap hero-bottom">
+      <span class="hero-note">Local businesses. Relevant products. More ways to discover.</span>
+      <span class="hero-tagline">Your local market, within reach.</span>
+      <span class="hero-motto">Discover local. Shop with confidence.</span>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Electronics &amp; accessories</span><span>Home &amp; everyday essentials</span><span>Fashion &amp; lifestyle</span><span>Books &amp; stationery</span><span>Tools &amp; specialist products</span><span>And so much more to explore</span>
+      <span>Electronics &amp; accessories</span><span>Home &amp; everyday essentials</span><span>Fashion &amp; lifestyle</span><span>Books &amp; stationery</span><span>Tools &amp; specialist products</span><span>And so much more to explore</span>
+    </div>
+  </div>
+
+  <!-- Why -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="kicker"><span class="kicker-num">01</span>The possibility around the corner</p>
+          <h2>Finding the right product shouldn't always mean <em>looking far away.</em></h2>
+        </div>
+        <div class="section-copy">
+          <p>Local markets are full of useful products, specialist knowledge and businesses that serve their communities every day.</p>
+          <p>But a product can be on a neighbourhood shelf without being easy to find online. Pangeabuy is built around the opportunity to bring those local possibilities into view.</p>
+        </div>
+      </div>
+
+      <ol class="frictions" data-reveal>
+        <li>
+          <span class="friction-num" aria-hidden="true">01</span>
+          <div class="friction-title"><span class="friction-tag">Discovery</span><h3>The right product. Still hard to find.</h3></div>
+          <p>A nearby merchant may offer what you need, but you may not know the business or what it sells.</p>
+          <p class="friction-answer"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg>Make local options more discoverable.</p>
+        </li>
+        <li>
+          <span class="friction-num" aria-hidden="true">02</span>
+          <div class="friction-title"><span class="friction-tag">Connection</span><h3>Local options. Scattered everywhere.</h3></div>
+          <p>Business pages, websites and messages can make exploring your local choices feel fragmented.</p>
+          <p class="friction-answer"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg>A more connected starting point.</p>
+        </li>
+        <li>
+          <span class="friction-num" aria-hidden="true">03</span>
+          <div class="friction-title"><span class="friction-tag">Visibility</span><h3>Good businesses. Limited digital reach.</h3></div>
+          <p>Many merchants rely on foot traffic and referrals. Their products could be useful to someone who has never walked in.</p>
+          <p class="friction-answer"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg>Another opportunity to be seen.</p>
+        </li>
+        <li>
+          <span class="friction-num" aria-hidden="true">04</span>
+          <div class="friction-title"><span class="friction-tag">Knowledge</span><h3>Local expertise. Often still offline.</h3></div>
+          <p>A specialist shop may have exactly the right variation or product knowledge, hidden behind its storefront.</p>
+          <p class="friction-answer"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg>Bring useful details into view.</p>
+        </li>
+      </ol>
+      <p class="pull" data-reveal>A stronger local shopping experience begins with making local options easier to find.</p>
+    </div>
+  </section>
+
+  <!-- Explore -->
+  <section class="section explore" id="explore">
+    <div class="wrap">
+      <div class="explore-grid">
+        <figure class="listing-art" data-reveal>
+          <img src="assets/home.svg" alt="Illustrative household products" width="360" height="280">
+          <figcaption class="listing-tag">A local possibility / Illustration</figcaption>
+          <div class="listing-card">
+            <span class="listing-store">Everyday Home Store</span>
+            <strong>Little things. A more thoughtful home.</strong>
+            <span class="chip">Home &amp; everyday essentials</span>
+          </div>
+        </figure>
+
+        <div class="explore-copy" data-reveal>
+          <p class="kicker"><span class="kicker-num">02</span>Meet Pangeabuy</p>
+          <h2>Discover more of <em>what's local.</em></h2>
+          <p>Hyper-commerce, in everyday language: a more connected way to discover relevant products and participating merchants in your local market.</p>
+          <p>For customers, a clearer starting point. For merchants, another opportunity to be discovered.</p>
+
+          <ol class="values">
+            <li><span>01</span><div><h3>Discover</h3><p>Explore relevant products and participating businesses in a more organised discovery experience.</p></div></li>
+            <li><span>02</span><div><h3>Compare your options</h3><p>Review the available listing information and decide which option best suits your needs.</p></div></li>
+            <li><span>03</span><div><h3>Connect with local commerce</h3><p>Find participating merchants and follow the purchase journey actually supported for each listing.</p></div></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="availability" data-reveal>
+        <span class="pulse" aria-hidden="true"></span>
+        <div>
+          <strong>A look at the idea. A clear view of the status.</strong>
+          <p>This is the official introduction to Pangeabuy. Live product search, local coverage and merchant onboarding are not connected on this website. Examples are illustrative, and launch availability has not been announced.</p>
+        </div>
+        <button class="button button-ghost" data-info="access">About access <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- How -->
+  <section class="section how" id="how">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="kicker"><span class="kicker-num">03</span>A simple journey</p>
+          <h2>From a need to <em>a local possibility.</em></h2>
+        </div>
+        <div class="section-copy">
+          <p>Start with what you need. Get to know the local options. Take the next step with the information in front of you.</p>
+        </div>
+      </div>
+      <ol class="steps" data-reveal>
+        <li><span class="step-node">01</span><h3>Start with what you need.</h3><p>Explore a product or category you are interested in, using the features available in the platform.</p></li>
+        <li><span class="step-node">02</span><h3>Discover relevant local options.</h3><p>Find participating merchants and relevant listings, depending on coverage and merchant-provided information.</p></li>
+        <li><span class="step-node">03</span><h3>Take a closer look at the details.</h3><p>Review the product and merchant information available to understand whether an option meets your needs.</p></li>
+        <li><span class="step-node">04</span><h3>Follow the available journey.</h3><p>Use the contact, order, payment, pickup or delivery options only where supported for that listing.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="h-pin">
+      <div class="h-viewport">
+        <div class="h-row">
+          <div class="h-intro">
+            <div>
+              <p class="kicker"><span class="kicker-num">04</span>Everyday needs. Unexpected finds.</p>
+              <h2>Your local market is <em>more diverse than you think.</em></h2>
+            </div>
+            <div>
+              <p class="h-intro-copy">From a new charging cable to a fresh notebook. There's a whole world behind the shopfronts.</p>
+              <div class="category-filters" role="group" aria-label="Explore illustrative category groups">
+                <button data-filter="all" aria-pressed="true">All possibilities</button>
+                <button data-filter="everyday" aria-pressed="false">Everyday living</button>
+                <button data-filter="personal" aria-pressed="false">Personal &amp; creative</button>
+                <button data-filter="specialist" aria-pressed="false">Specialist finds</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-grid h-track">
+          <button class="category-card" data-group="specialist" data-category="electronics" style="--tone:#dfebe5">
+            <span class="category-top"><span class="category-index">01</span><span class="category-group">Specialist finds</span></span>
+            <span class="category-img"><img src="assets/electronics.svg" width="360" height="280" loading="lazy" alt="Phone and wireless earphones"></span>
+            <span class="category-body"><span class="category-title">Electronics &amp; accessories</span><span class="category-sub">Little connections. Everyday technology.</span></span>
+            <span class="category-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="category-card" data-group="everyday" data-category="home" style="--tone:#eee8db">
+            <span class="category-top"><span class="category-index">02</span><span class="category-group">Everyday living</span></span>
+            <span class="category-img"><img src="assets/home.svg" width="360" height="280" loading="lazy" alt="Ceramic cup and a leafy plant"></span>
+            <span class="category-body"><span class="category-title">Home &amp; everyday essentials</span><span class="category-sub">Useful things for the life you live.</span></span>
+            <span class="category-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="category-card" data-group="personal" data-category="fashion" style="--tone:#eee5dd">
+            <span class="category-top"><span class="category-index">03</span><span class="category-group">Personal &amp; creative</span></span>
+            <span class="category-img"><img src="assets/fashion.svg" width="360" height="280" loading="lazy" alt="Cotton shirt in warm terracotta"></span>
+            <span class="category-body"><span class="category-title">Fashion &amp; lifestyle</span><span class="category-sub">Your style. Your local possibilities.</span></span>
+            <span class="category-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="category-card" data-group="personal" data-category="books" style="--tone:#e6e9dc">
+            <span class="category-top"><span class="category-index">04</span><span class="category-group">Personal &amp; creative</span></span>
+            <span class="category-img"><img src="assets/books.svg" width="360" height="280" loading="lazy" alt="Notebook and pencil"></span>
+            <span class="category-body"><span class="category-title">Books &amp; stationery</span><span class="category-sub">For big ideas and everyday notes.</span></span>
+            <span class="category-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="category-card" data-group="specialist" data-category="tools" style="--tone:#e8e5dc">
+            <span class="category-top"><span class="category-index">05</span><span class="category-group">Specialist finds</span></span>
+            <span class="category-img"><img src="assets/tools.svg" width="360" height="280" loading="lazy" alt="Spanner and screwdriver"></span>
+            <span class="category-body"><span class="category-title">Tools &amp; specialist products</span><span class="category-sub">The right thing for the job at hand.</span></span>
+            <span class="category-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          </button>
+            <div class="more-card">
+              <span class="more-mark" aria-hidden="true">✳</span>
+              <div>
+                <h3>And so much more to explore.</h3>
+                <p>A local market is never just one thing.</p>
+                <a class="text-link" href="#local">Meet the bigger idea <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap h-meta" aria-hidden="true">
+        <span class="h-count"><b class="h-count-now">01</b> / <span class="h-count-total">06</span></span>
+        <span class="h-progress"><i></i></span>
+        <span class="h-hint">Scroll to explore <svg class="i"><use href="#i-right"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local -->
+  <section class="section local" id="local">
+    <div class="wrap local-grid">
+      <figure class="street" data-reveal>
+        <svg viewBox="0 0 640 520" role="img" aria-label="An illustrated neighbourhood of independent local shops">
+          <rect width="640" height="520" fill="#efe7d6"/>
+          <circle cx="510" cy="110" r="54" fill="#f0c9a6"/>
+          <path d="M0 150Q120 120 230 150T460 140 640 130V520H0Z" fill="#e6dcc6"/>
+          <!-- Corner store -->
+          <g>
+            <rect x="40" y="170" width="270" height="270" fill="#0f6f6c"/>
+            <rect x="40" y="170" width="270" height="34" fill="#0b5654"/>
+            <text x="175" y="193" text-anchor="middle" fill="#f5f1e8" font-family="Geist Mono, monospace" font-size="12" letter-spacing="2">THE CORNER STORE</text>
+            <path d="M30 214H320V244H30Z" fill="#f5f1e8"/>
+            <path d="M30 214h29v30H30zm58 0h29v30H88zm58 0h29v30h-29zm58 0h29v30h-29zm58 0h29v30h-29z" fill="#008888"/>
+            <path d="M30 244q14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0 14.5 14 29 0" fill="#f5f1e8"/>
+            <rect x="62" y="275" width="150" height="110" rx="3" fill="#cfe6df"/>
+            <path d="M62 330h150M137 275v110" stroke="#0b5654" stroke-width="4"/>
+            <g fill="#c8693e"><rect x="76" y="305" width="16" height="22" rx="2"/><rect x="98" y="312" width="12" height="15" rx="2"/><circle cx="168" cy="317" r="10"/></g>
+            <g fill="#163336" opacity=".75"><rect x="80" y="358" width="22" height="16" rx="2"/><rect x="150" y="352" width="14" height="22" rx="2"/><rect x="170" y="360" width="26" height="14" rx="2"/></g>
+            <rect x="232" y="290" width="58" height="150" rx="2" fill="#0b5654"/>
+            <circle cx="278" cy="368" r="3.5" fill="#f0c9a6"/>
+          </g>
+          <!-- Books shop -->
+          <g>
+            <rect x="330" y="210" width="270" height="230" fill="#c8693e"/>
+            <rect x="330" y="210" width="270" height="34" fill="#a9532e"/>
+            <text x="465" y="233" text-anchor="middle" fill="#f5f1e8" font-family="Geist Mono, monospace" font-size="12" letter-spacing="2">BOOKS &amp; LITTLE IDEAS</text>
+            <path d="M322 254H608V280H322Z" fill="#f5f1e8"/>
+            <path d="M322 254h26v26h-26zm52 0h26v26h-26zm52 0h26v26h-26zm52 0h26v26h-26zm52 0h26v26h-26zm52 0h26v26h-26z" fill="#a9532e"/>
+            <rect x="350" y="300" width="58" height="140" rx="2" fill="#7f3d21"/>
+            <circle cx="398" cy="372" r="3.5" fill="#f0c9a6"/>
+            <rect x="428" y="300" width="150" height="96" rx="3" fill="#f6e3cf"/>
+            <g fill="#0f6f6c"><rect x="442" y="330" width="9" height="40"/><rect x="454" y="322" width="11" height="48"/></g>
+            <g fill="#163336" opacity=".8"><rect x="468" y="334" width="8" height="36"/><rect x="479" y="326" width="10" height="44" fill="#c8693e"/></g>
+            <path d="M440 370h126" stroke="#7f3d21" stroke-width="3"/>
+            <rect x="500" y="340" width="56" height="30" rx="2" fill="#fff" opacity=".9" transform="rotate(-6 528 355)"/>
+          </g>
+          <!-- Street -->
+          <rect y="440" width="640" height="16" fill="#d6cbb4"/>
+          <rect y="456" width="640" height="64" fill="#cfc4ad"/>
+          <path d="M20 488h60m40 0h60m40 0h60m40 0h60m40 0h60m40 0h60" stroke="#e6dcc6" stroke-width="4" stroke-linecap="round"/>
+          <!-- Plant & lamp -->
+          <path d="M318 440l6-34h18l6 34z" fill="#a9532e"/>
+          <path d="M333 406c-16-10-20-30-6-40 4 16 10 22 6 40m0 0c14-14 30-14 34-4-12 6-20 8-34 4" fill="#5f806a"/>
+          <path d="M620 440V250" stroke="#163336" stroke-width="4"/>
+          <path d="M605 250h30l-6-22h-18z" fill="#163336"/>
+          <circle cx="620" cy="256" r="5" fill="#f0c9a6"/>
+        </svg>
+        <figcaption>Different shops. Shared neighbourhood.</figcaption>
+      </figure>
+
+      <div class="local-copy" data-reveal>
+        <p class="kicker"><span class="kicker-num">05</span>More than a place to shop</p>
+        <h2>Local businesses are part of what <em>makes a place work.</em></h2>
+        <p>There's knowledge behind the counter. A familiar face at the door. People building livelihoods, one useful product and one conversation at a time.</p>
+        <p>Pangeabuy aims to give participating merchants another way to bring their products into view—and customers another way to find them.</p>
+        <ul class="principles">
+          <li>Keep local options visible.</li>
+          <li>Make discovery more convenient.</li>
+          <li>Support the people behind commerce.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Merchants -->
+  <section class="section merchants" id="merchants">
+    <div class="wrap merchant-grid">
+      <div class="merchant-copy" data-reveal>
+        <p class="kicker"><span class="kicker-num">06</span>For the people behind the counter</p>
+        <h2>You already serve your neighbourhood. <em>Help more people discover what you offer.</em></h2>
+        <p>You manage the products, suppliers and everyday work. Potential customers may still not know what you sell.</p>
+        <p>Pangeabuy is designed to create an additional discovery opportunity for participating merchants, using relevant business and product information.</p>
+        <div class="actions">
+          <button class="button" data-info="merchant">I'm a Merchant <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <a class="text-link" href="#ecosystem">Learn how it works <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a>
+        </div>
+        <p class="caption">An opportunity for discovery. No promise of customer growth or sales.</p>
+      </div>
+      <div class="merchant-benefits" data-reveal>
+        <article><span class="benefit-num">01</span><div><h3>Let your products tell their story.</h3><p>Present useful product information that helps people understand what your business offers.</p></div></article>
+        <article><span class="benefit-num">02</span><div><h3>Be discovered beyond your doorstep.</h3><p>Create another potential route to people beyond your existing walk-in customer base.</p></div></article>
+        <article><span class="benefit-num">03</span><div><h3>Build on information you maintain.</h3><p>Where implemented and authorised, relevant Stromule information may support customer-facing discovery.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section class="section ecosystem" id="ecosystem">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="kicker"><span class="kicker-num">07</span>Two products. One connected vision.</p>
+          <h2>Better-organised businesses. <em>More useful local discovery.</em></h2>
+        </div>
+        <div class="section-copy">
+          <p>Pangeabuy and Stromule are products of Kumpali Private Limited. Complementary by design, with different jobs to do.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-scroller">
+      <div class="story" data-step="0">
+        <svg class="story-art" viewBox="0 0 1200 360" role="img" aria-label="Illustration: a local shop's information is organised in Stromule, passes an authorised integration, and appears in Pangeabuy for a customer to discover">
+          <defs>
+            <clipPath id="laptop-screen"><rect x="292" y="147" width="136" height="96" rx="3"/></clipPath>
+            <clipPath id="phone-screen"><rect x="801" y="118" width="78" height="164" rx="11"/></clipPath>
+          </defs>
+
+          <!-- Ground -->
+          <path d="M20 292H1180" stroke="#e3dbc8" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- 1 · Merchant: shopfront -->
+          <g class="scene" data-scene="1">
+            <ellipse cx="120" cy="292" rx="96" ry="8" fill="#163336" opacity=".07"/>
+            <rect x="45" y="118" width="150" height="174" rx="3" fill="#0f6f6c"/>
+            <rect x="45" y="118" width="150" height="26" rx="3" fill="#0b5654"/>
+            <rect x="80" y="125" width="80" height="12" rx="6" fill="#f5f1e8" opacity=".9"/>
+            <path d="M38 150H202V170H38Z" fill="#f5f1e8"/>
+            <path d="M38 150h20.5v20H38zm41 0h20.5v20H79zm41 0h20.5v20H120zm41 0h20.5v20H161z" fill="#008888"/>
+            <path d="M38 170q10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0 10.25 10 20.5 0" fill="#f5f1e8"/>
+            <rect x="58" y="192" width="74" height="60" rx="3" fill="#cfe6df"/>
+            <path d="M58 222h74M95 192v60" stroke="#0b5654" stroke-width="3"/>
+            <g fill="#c8693e"><rect x="66" y="203" width="10" height="15" rx="2"/><circle cx="114" cy="210" r="7"/></g>
+            <g fill="#163336" opacity=".7"><rect x="66" y="232" width="16" height="14" rx="2"/><rect x="106" y="230" width="12" height="16" rx="2"/></g>
+            <rect x="146" y="200" width="36" height="92" rx="2" fill="#0b5654"/>
+            <circle cx="174" cy="248" r="2.5" fill="#f0c9a6"/>
+            <path d="M198 292l4-22h14l4 22z" fill="#a9532e"/>
+            <path d="M209 270c-11-7-13-20-4-27 3 11 7 15 4 27m0 0c9-9 20-9 23-3-8 4-13 5-23 3" fill="#5f806a"/>
+          </g>
+
+          <!-- 2 · Stromule: laptop with organised records -->
+          <g class="scene" data-scene="2">
+            <ellipse cx="360" cy="292" rx="104" ry="8" fill="#163336" opacity=".07"/>
+            <g class="story-float">
+              <rect x="262" y="96" width="58" height="40" rx="5" fill="#fff" stroke="#d8d0bf" transform="rotate(-8 291 116)"/>
+              <path d="M272 108h30M272 116h22M272 124h26" stroke="#c9bfa9" stroke-width="3" stroke-linecap="round" transform="rotate(-8 291 116)"/>
+              <rect x="404" y="88" width="56" height="40" rx="5" fill="#fff" stroke="#d8d0bf" transform="rotate(7 432 108)"/>
+              <path d="M414 100h28M414 108h20M414 116h24" stroke="#c9bfa9" stroke-width="3" stroke-linecap="round" transform="rotate(7 432 108)"/>
+            </g>
+            <rect x="284" y="139" width="152" height="112" rx="8" fill="#163336"/>
+            <g clip-path="url(#laptop-screen)">
+              <rect x="292" y="147" width="136" height="96" fill="#f5f1e8"/>
+              <rect x="292" y="147" width="30" height="96" fill="#e6eee9"/>
+              <image href="assets/stromule.png" x="298" y="152" width="18" height="18"/>
+              <g fill="#c9d8d2"><rect x="299" y="180" width="16" height="4" rx="2"/><rect x="299" y="190" width="16" height="4" rx="2"/><rect x="299" y="200" width="16" height="4" rx="2"/></g>
+              <g class="story-rows">
+                <rect x="330" y="156" width="90" height="16" rx="4" fill="#fff"/><rect x="336" y="162" width="6" height="4" rx="1" fill="#008888"/><rect x="348" y="162" width="46" height="4" rx="2" fill="#c9bfa9"/>
+                <rect x="330" y="178" width="90" height="16" rx="4" fill="#fff"/><rect x="336" y="184" width="6" height="4" rx="1" fill="#008888"/><rect x="348" y="184" width="38" height="4" rx="2" fill="#c9bfa9"/>
+                <rect x="330" y="200" width="90" height="16" rx="4" fill="#fff"/><rect x="336" y="206" width="6" height="4" rx="1" fill="#9fb3ad"/><rect x="348" y="206" width="52" height="4" rx="2" fill="#c9bfa9"/>
+                <rect x="330" y="222" width="90" height="16" rx="4" fill="#fff"/><rect x="336" y="228" width="6" height="4" rx="1" fill="#9fb3ad"/><rect x="348" y="228" width="30" height="4" rx="2" fill="#c9bfa9"/>
+              </g>
+            </g>
+            <path d="M268 251h184l-12 20H280z" fill="#2b4a4a"/>
+            <rect x="268" y="271" width="184" height="6" rx="3" fill="#1e3a3a"/>
+          </g>
+
+          <!-- 3 · Authorised integration: the gate -->
+          <g class="scene" data-scene="3">
+            <ellipse cx="600" cy="292" rx="60" ry="7" fill="#163336" opacity=".07"/>
+            <rect x="594" y="230" width="12" height="62" rx="3" fill="#cfc4ad"/>
+            <circle class="story-gate-ring" cx="600" cy="196" r="52" fill="none" stroke="#008888" stroke-width="1.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+            <circle cx="600" cy="196" r="38" fill="#008888"/>
+            <path d="M600 176l15 6v10c0 9-6 16-15 20-9-4-15-11-15-20v-10z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M593 194l5 5 9-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- 4 · Pangeabuy: phone with listings -->
+          <g class="scene" data-scene="4">
+            <ellipse cx="840" cy="292" rx="70" ry="8" fill="#163336" opacity=".07"/>
+            <rect x="794" y="110" width="92" height="180" rx="17" fill="#163336"/>
+            <g clip-path="url(#phone-screen)">
+              <rect x="801" y="118" width="78" height="164" fill="#f5f1e8"/>
+              <image href="assets/logo.png" x="808" y="128" width="16" height="16"/>
+              <rect x="808" y="152" width="64" height="12" rx="6" fill="#fff"/>
+              <circle cx="815" cy="158" r="2.5" fill="none" stroke="#9fb3ad" stroke-width="1.5"/>
+              <g class="story-cards">
+                <rect x="808" y="172" width="64" height="44" rx="6" fill="#fff"/>
+                <rect x="812" y="176" width="22" height="22" rx="4" fill="#f0c9a6"/>
+                <rect x="838" y="180" width="28" height="4" rx="2" fill="#163336" opacity=".7"/><rect x="838" y="188" width="20" height="4" rx="2" fill="#c9bfa9"/>
+                <rect x="812" y="202" width="56" height="8" rx="4" fill="#d7e8e2"/>
+                <rect x="808" y="222" width="64" height="44" rx="6" fill="#fff"/>
+                <rect x="812" y="226" width="22" height="22" rx="4" fill="#cfe6df"/>
+                <rect x="838" y="230" width="24" height="4" rx="2" fill="#163336" opacity=".7"/><rect x="838" y="238" width="18" height="4" rx="2" fill="#c9bfa9"/>
+                <rect x="812" y="252" width="56" height="8" rx="4" fill="#d7e8e2"/>
+              </g>
+            </g>
+            <rect x="826" y="114" width="28" height="5" rx="2.5" fill="#0b2021"/>
+          </g>
+
+          <!-- 5 · Customer -->
+          <g class="scene" data-scene="5">
+            <ellipse cx="1080" cy="292" rx="60" ry="8" fill="#163336" opacity=".07"/>
+            <g class="story-person">
+              <path d="M1066 244l-6 46h11l7-34 7 34h11l-6-46z" fill="#163336"/>
+              <path d="M1058 186q22-14 44 0l6 62h-56z" fill="#008888"/>
+              <circle cx="1080" cy="160" r="19" fill="#b9785a"/>
+              <path d="M1061 158q2-22 21-21 17 1 17 19-10-8-24-5-8 2-14 7z" fill="#163336"/>
+              <path d="M1104 200q14 18 6 40" stroke="#008888" stroke-width="11" stroke-linecap="round" fill="none"/>
+              <rect x="1100" y="232" width="30" height="34" rx="4" fill="#c8693e"/>
+              <path d="M1108 234v-7a7 7 0 0 1 14 0v7" stroke="#a9532e" stroke-width="3" fill="none"/>
+              <path d="M1058 198q-12 16-4 36" stroke="#008888" stroke-width="11" stroke-linecap="round" fill="none"/>
+            </g>
+          </g>
+
+          <!-- Journey line -->
+          <path d="M120 326H1080" stroke="#d8d0bf" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+          <path class="story-progress" d="M120 326H1080" stroke="#008888" stroke-width="2.5" stroke-linecap="round" pathLength="1"/>
+          <g class="story-nodes">
+            <circle cx="120" cy="326" r="6"/><circle cx="360" cy="326" r="6"/><circle cx="600" cy="326" r="6"/><circle cx="840" cy="326" r="6"/><circle cx="1080" cy="326" r="6"/>
+          </g>
+          <g class="story-packets">
+            <path id="story-held" d="M120 326H588"/>
+            <path id="story-line" d="M120 326H1080"/>
+            <circle r="4" fill="#9fb3ad" opacity="0"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#story-held"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="4s" repeatCount="indefinite"/></circle>
+            <circle r="4" fill="#008888" opacity="0"><animateMotion dur="7s" begin="1.4s" repeatCount="indefinite"><mpath href="#story-line"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.06;.94;1" dur="7s" begin="1.4s" repeatCount="indefinite"/></circle>
+            <circle r="4" fill="#9fb3ad" opacity="0"><animateMotion dur="4s" begin="2.6s" repeatCount="indefinite"><mpath href="#story-held"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="4s" begin="2.6s" repeatCount="indefinite"/></circle>
+            <circle r="4" fill="#008888" opacity="0"><animateMotion dur="7s" begin="4.9s" repeatCount="indefinite"><mpath href="#story-line"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.06;.94;1" dur="7s" begin="4.9s" repeatCount="indefinite"/></circle>
+          </g>
+        </svg>
+
+        <ol class="story-steps" aria-label="How authorised information flows">
+          <li data-scene="1"><span class="story-num">01</span><strong>Merchant</strong></li>
+          <li data-scene="2"><span class="story-num">02</span><strong>Stromule records</strong></li>
+          <li data-scene="3"><span class="story-num">03</span><strong>Authorised information</strong><small>Authorised integration · where implemented</small></li>
+          <li data-scene="4"><span class="story-num">04</span><strong>Pangeabuy discovery</strong></li>
+          <li data-scene="5"><span class="story-num">05</span><strong>Customer</strong></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="eco-products" data-reveal>
+        <article class="eco-product">
+          <span class="eco-logo"><img src="assets/stromule.png" width="40" height="40" alt="Stromule logo"></span>
+          <div>
+            <h3>Stromule <span>Our business OS</span></h3>
+            <h4>The business side.</h4>
+            <p>Organise relevant business information, product records, orders and everyday operations.</p>
+            <a class="text-link" href="https://stromule.com/">Explore Stromule <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="eco-product">
+          <span class="eco-logo"><img src="assets/logo.png" width="40" height="40" alt="Pangeabuy logo"></span>
+          <div>
+            <h3>Pangeabuy <span>Your local market, within reach.</span></h3>
+            <h4>The customer side.</h4>
+            <p>Discover relevant products and participating merchants through a local hyper-commerce experience.</p>
+            <a class="text-link" href="#explore">Explore Pangeabuy <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <p class="permission"><svg class="permission-icon" aria-hidden="true"><use href="#i-key"/></svg><span><strong>Business records do not automatically become public.</strong> Only eligible information supported by an implemented integration and authorised by the merchant may support discovery. Stromule is not presented here as a universal requirement for joining Pangeabuy.</span></p>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="section trust">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="kicker"><span class="kicker-num">08</span>Confidence starts with clarity</p>
+          <h2>Better discovery begins with <em>information you can rely on.</em></h2>
+        </div>
+        <div class="section-copy">
+          <p>Clear information. Recognisable merchants. Honest expectations about what happens next.</p>
+        </div>
+      </div>
+      <div class="trust-grid" data-reveal>
+        <article><svg class="trust-icon" aria-hidden="true"><use href="#i-doc"/></svg><h3>Clear product information</h3><p>Details should reflect the information actually supplied and supported by the merchant and platform.</p></article>
+        <article><svg class="trust-icon" aria-hidden="true"><use href="#i-store"/></svg><h3>Merchant clarity</h3><p>Understand who is offering a product, using the business details available on the listing.</p></article>
+        <article><svg class="trust-icon" aria-hidden="true"><use href="#i-route"/></svg><h3>Honest purchase journeys</h3><p>Contact, ordering, pickup and delivery depend on the options supported for each listing.</p></article>
+        <article><svg class="trust-icon" aria-hidden="true"><use href="#i-key"/></svg><h3>Respect for permissions</h3><p>Information sharing depends on the implemented integration, authorisation and applicable policies.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="wrap faq-grid">
+      <div class="faq-intro">
+        <p class="kicker"><span class="kicker-num">09</span>A little more clarity</p>
+        <h2>Good questions. <em>Straightforward answers.</em></h2>
+        <p>Get to know the idea, the possibilities and the details that matter.</p>
+      </div>
+      <div id="faq-list">
+        <details open><summary>What is Pangeabuy?<span class="faq-icon" aria-hidden="true"></span></summary><p>Pangeabuy is a hyper-commerce platform developed by Kumpali Private Limited, designed to help people discover relevant products and participating merchants in their local market.</p></details>
+        <details><summary>What does hyper-commerce mean?<span class="faq-icon" aria-hidden="true"></span></summary><p>Here, it means a shopping and discovery experience focused on relevant products and participating merchants in a local market. The purchase options depend on the capabilities actually supported.</p></details>
+        <details><summary>Can I find products from nearby shops?<span class="faq-icon" aria-hidden="true"></span></summary><p>That is the intended experience. Actual options will depend on participating merchants, available listings and local coverage. This introductory website does not provide live product search or location-based results.</p></details>
+        <details><summary>Can I buy products through Pangeabuy?<span class="faq-icon" aria-hidden="true"></span></summary><p>This website does not provide checkout or take payments. In a connected shopping experience, the purchase journey will depend on the options supported for the relevant listing and merchant.</p></details>
+        <details><summary>Does Pangeabuy offer home delivery?<span class="faq-icon" aria-hidden="true"></span></summary><p>No delivery service is offered through this website. Delivery, pickup and other fulfilment options depend on the merchant and the capabilities actually implemented for a listing.</p></details>
+        <details><summary>How can a merchant join Pangeabuy?<span class="faq-icon" aria-hidden="true"></span></summary><p>Merchant onboarding is not connected on this website, and registration is not open here. No launch date or official enquiry channel has been supplied for publication. Updated joining information will need to be added when available.</p></details>
+        <details><summary>How are Pangeabuy and Stromule connected?<span class="faq-icon" aria-hidden="true"></span></summary><p>Pangeabuy focuses on customer-facing discovery and commerce. Stromule focuses on business organisation. Where an integration is implemented and authorised, eligible merchant-maintained information can support Pangeabuy discovery. Private business records do not automatically become public.</p></details>
+        <details><summary>Are all products and merchants available everywhere?<span class="faq-icon" aria-hidden="true"></span></summary><p>No. Availability depends on actual merchant participation, location coverage and the information on the platform. Illustrative examples on this website do not represent live inventory or confirmed launch categories.</p></details>
+        <details><summary>How does Pangeabuy use product information?<span class="faq-icon" aria-hidden="true"></span></summary><p>Relevant merchant-maintained information is intended to support customer-facing discovery where the implementation, permissions and product rules allow it. This site has no connected merchant data or product feed. Platform-specific policies must be published before a live service is introduced.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="closing" id="about">
+    <div class="wrap">
+      <div class="closing-card" data-reveal>
+        <p class="kicker">Make room for a new local possibility</p>
+        <h2>Your next great local find could be <em>closer than you think.</em></h2>
+        <p>Discover participating local merchants, explore relevant products and a more connected way to navigate your local market.</p>
+        <div class="actions">
+          <button class="button button-light" data-info="access">About launch &amp; access <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <a class="text-link" href="#merchants">For merchants <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <svg class="closing-rings" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="199"/></g><circle cx="200" cy="200" r="7" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#main"><img src="assets/logo.png" width="36" height="36" alt=""><span>pangeabuy</span></a>
+        <p class="footer-tagline">Your local market, within reach.</p>
+        <p class="footer-description">A hyper-commerce platform designed to help people discover relevant products and participating merchants in their local market.</p>
+      </div>
+      <div class="footer-links">
+        <span>Discover</span>
+        <a href="#explore">Explore Pangeabuy</a>
+        <a href="#categories">Local possibilities</a>
+        <a href="#how">How it works</a>
+        <a href="#merchants">For merchants</a>
+      </div>
+      <div class="footer-links">
+        <span>Get to know us</span>
+        <a href="#about">About Pangeabuy</a>
+        <a href="#ecosystem">Pangeabuy &amp; Stromule</a>
+        <a href="#faq">Questions &amp; answers</a>
+        <button data-info="contact">Contact &amp; support</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Pangeabuy. A product of Kumpali Private Limited.</span>
+      <div>
+        <button data-info="privacy">Privacy information</button>
+        <button data-info="terms">Terms &amp; availability</button>
+        <a href="#main">Back to top <svg class="i" aria-hidden="true"><use href="#i-up"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<dialog id="info-dialog" aria-labelledby="dialog-title">
+  <button class="dialog-close" aria-label="Close dialog"><span aria-hidden="true">×</span></button>
+  <img src="assets/logo.png" width="40" height="40" alt="">
+  <p class="kicker">Pangeabuy / A clearer picture</p>
+  <h2 id="dialog-title"></h2>
+  <p id="dialog-copy"></p>
+  <button class="button dialog-done">Got it <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+</dialog>
+
+</body>
+</html>
