@@ -105,6 +105,53 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   update();
 })();
 
+/* ---------- Closing card: soft spotlight follows the pointer ---------- */
+(() => {
+  const card = document.querySelector('.closing-card');
+  if (!card) return;
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)');
+  let frame = 0;
+  card.addEventListener('pointermove', e => {
+    if (!fine.matches || reduceMotion.matches || frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${(((e.clientX - r.left) / r.width) * 100).toFixed(1)}%`);
+      card.style.setProperty('--my', `${(((e.clientY - r.top) / r.height) * 100).toFixed(1)}%`);
+    });
+  });
+})();
+
+/* ---------- FAQ: smooth accordion, one answer open at a time ---------- */
+(() => {
+  const items = [...document.querySelectorAll('#faq-list details')];
+  const easing = 'cubic-bezier(.22, 1, .36, 1)';
+
+  function collapse(d) {
+    const panel = d.querySelector('.faq-a');
+    if (reduceMotion.matches) { d.open = false; return; }
+    d.dataset.busy = '1';
+    const anim = panel.animate([{ height: `${panel.offsetHeight}px`, opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 320, easing });
+    anim.onfinish = () => { d.open = false; delete d.dataset.busy; };
+  }
+  function expand(d) {
+    const panel = d.querySelector('.faq-a');
+    d.open = true;
+    if (reduceMotion.matches) return;
+    d.dataset.busy = '1';
+    const anim = panel.animate([{ height: '0px', opacity: 0 }, { height: `${panel.scrollHeight}px`, opacity: 1 }], { duration: 440, easing });
+    anim.onfinish = () => { delete d.dataset.busy; };
+  }
+
+  items.forEach(d => d.querySelector('summary').addEventListener('click', e => {
+    e.preventDefault();
+    if (d.dataset.busy) return;
+    if (d.open) { collapse(d); return; }
+    items.forEach(other => { if (other !== d && other.open && !other.dataset.busy) collapse(other); });
+    expand(d);
+  }));
+})();
+
 /* ---------- Mobile navigation ---------- */
 const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');

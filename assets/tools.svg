@@ -1,1 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280"><rect width="360" height="280" fill="#e8e5dc"/><ellipse cx="180" cy="242" rx="110" ry="12" fill="#163336" opacity=".08"/><path d="M88 73q-14 55 37 69l82 91q15 15 30-1t0-28l-86-84q18-47-27-64l5 36-22 13Z" fill="#6c7c79"/><path d="M218 52l30 6-35 120-26-7Z" fill="#cba967"/><rect x="169" y="153" width="45" height="86" rx="17" fill="#b66345" transform="rotate(16 190 196)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eeebe3"/><stop offset="1" stop-color="#ddd8cc"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c7d0ce"/><stop offset=".35" stop-color="#8d9a98"/><stop offset=".6" stop-color="#6c7b79"/><stop offset="1" stop-color="#4b5958"/></linearGradient>
+    <linearGradient id="shaft" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d8a88"/><stop offset=".45" stop-color="#eef1f0"/><stop offset="1" stop-color="#6f7c7a"/></linearGradient>
+    <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9c4a27"/><stop offset=".4" stop-color="#d9784a"/><stop offset="1" stop-color="#8f4122"/></linearGradient>
+    <linearGradient id="gripTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c8a265"/><stop offset=".45" stop-color="#ecd09b"/><stop offset="1" stop-color="#b38d52"/></linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2d2a24" stop-opacity=".28"/><stop offset="1" stop-color="#2d2a24" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="360" height="280" fill="#e8e5dc"/>
+  <path d="M0 220h360v60H0z" fill="#d6d0c1"/>
+  <path d="M0 220h360" stroke="#c9c2b1" stroke-width="2"/>
+  <ellipse cx="180" cy="240" rx="130" ry="10" fill="url(#shadow)"/>
+
+  <!-- Spanner -->
+  <g transform="rotate(42 170 140)">
+    <rect x="160" y="78" width="22" height="150" rx="9" fill="url(#steel)"/>
+    <path d="M166 86v136" stroke="#e7ecea" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+    <path d="M171 34c-22 0-36 16-36 34 0 14 8 26 21 31v8h30v-8c13-5 21-17 21-31 0-18-14-34-36-34zm-10 12h20v26h-20z" fill="url(#steel)" fill-rule="evenodd"/>
+    <path d="M146 58c4-10 12-16 22-18" stroke="#e7ecea" stroke-width="3" stroke-linecap="round" opacity=".75" fill="none"/>
+    <circle cx="171" cy="232" r="17" fill="url(#steel)"/>
+    <circle cx="171" cy="232" r="8" fill="#ddd8cc"/>
+    <rect x="164" y="140" width="14" height="40" rx="3" fill="#4b5958" opacity=".25"/>
+  </g>
+
+  <!-- Screwdriver -->
+  <g transform="rotate(-28 230 140)">
+    <rect x="224" y="40" width="10" height="110" rx="2" fill="url(#shaft)"/>
+    <path d="M224 40h10l-2-14h-6z" fill="#7d8a88"/>
+    <rect x="216" y="146" width="26" height="14" rx="3" fill="url(#gripTop)"/>
+    <path d="M214 160h30l-2 76c0 7-6 12-13 12s-13-5-13-12z" fill="url(#grip)"/>
+    <path d="M222 168v64M236 168v64" stroke="#7f3a1d" stroke-width="2" opacity=".45"/>
+    <path d="M220 166v66" stroke="#f4b28d" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  </g>
+</svg>
